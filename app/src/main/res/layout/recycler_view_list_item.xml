@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/items_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/views_gap"
+    android:layout_marginBottom="@dimen/views_gap"
+    android:background="@color/fadedBlue"
+    android:elevation="@dimen/views_gap">
+
+    <TextView
+        android:id="@+id/tv_shop_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/shop_name"
+        android:textSize="@dimen/textSizeLarge"
+        android:textStyle="bold|italic"
+        style="@style/RecyclerViewItemStyle"/>
+
+    <TextView
+        android:id="@+id/tv_shop_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_shop_name"
+        android:text="@string/shop_address"
+        android:textColor="@color/textColorSecondary"
+        style="@style/RecyclerViewItemStyle"
+        />
+
+    <TextView
+        android:id="@+id/tv_shop_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="@string/shop_distance"
+        style="@style/RecyclerViewItemStyle"
+        android:textSize="@dimen/textSizeSmall"
+        />
+
+</RelativeLayout>
